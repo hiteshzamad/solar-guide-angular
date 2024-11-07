@@ -1,0 +1,22 @@
+@import '../../../assets/styles/styles.scss';
+
+.header {
+	position: fixed;
+	z-index: 10;
+	height: 4rem;
+	padding: 0 1rem;
+	background-color: $background-color;
+	.header__name {
+		color: #303030;
+		font-size: 1.75rem;
+		font-weight: 600;
+		line-height: 1.1;
+	}
+	.header__button {
+		margin: 0 1rem;
+		font-size: 1rem;
+		font-weight: 500;
+		color: #1A1A1A;
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,15 @@
+.router-host {
+    margin-top: 4rem;
+}
+
+@media (max-width: 767px) {
+	.router-host {
+		padding: 0 1rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.router-host {
+		padding: 0 4rem;
+	}
+}
