@@ -1,0 +1,28 @@
+.intro {
+    .intro__title {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #1A1A1A;
+        line-height: 1.2;
+    }
+
+    .intro__description {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-style: italic;
+        color: #1A1A1A;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro {
+        padding: 1rem 2rem;    
+    }
+}
+
+@media (min-width: 768px) {
+    .intro {
+        padding: 6rem 10rem;    
+    }
+}

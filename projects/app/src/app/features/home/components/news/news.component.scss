@@ -1,0 +1,32 @@
+.news {
+    .news__heading {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .news-item {
+        height: 20rem;
+        border: 0.1rem solid #e0e0e0;
+    }
+
+    .news-item__image {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+    .news-item__content {
+        padding: 0 1rem;
+    }
+
+    .news-item__title {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .news-item__description {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        overflow: hidden;
+    }
+}
