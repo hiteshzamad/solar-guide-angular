@@ -1,8 +1,8 @@
-<div class="news width--100pc flex--col">
+<div class="news flex--col">
     <div class="news__heading">News</div>
-    <swiper-container initSwiper [config]="swiperConfig">
+    <swiper-container class="margin--t1rem" initSwiper [config]="swiperConfig">
         <swiper-slide *ngFor="let item of newsList">
-            <div class="news-item">
+            <div class="news-item flex--col">
                 <img class="news-item__image" [src]="item.image" alt="News Image" />
                 <div class="news-item__content">
                     <div class="news-item__title">{{item.title}}</div>

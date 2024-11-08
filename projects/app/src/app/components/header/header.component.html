@@ -1,7 +1,10 @@
-<nav class="header flex--row flex--aln-cen width--100pc">
-	<div class="header__name"> Solar Guide </div>
+<nav class="header flex--row flex--aln-cen">
+	<div class="header__name"> Space Journey </div>
 	<div class="flex--1w"></div>
-	<a class="header__button flex--aln-cen flex--jus-cen" href="#">Home</a>
-	<a class="header__button flex--aln-cen flex--jus-cen" href="#">Home</a>
-	<a class="header__button flex--aln-cen flex--jus-cen" href="#">Home</a>
+	<a class="header__button" [href]="menuItem.link" *ngFor="let menuItem of menuList">{{menuItem.title}}</a>
+	<img class="icon__menu" *ngIf="!menuOpened" src="assets/icons/icon_menu_black.svg" (click)="onMenuClick()">
+	<img class="icon__menu" *ngIf="menuOpened" src="assets/icons/icon_close_black.svg" (click)="onMenuClick()">
+	<div class="header__menu flex--col flex--aln-cen" *ngIf="menuOpened">
+		<a class="header__menu-button" [href]="menuItem.link" *ngFor="let menuItem of menuList">{{menuItem.title}}</a>
+	</div>
 </nav>

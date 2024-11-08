@@ -1,0 +1,38 @@
+.footer {
+
+    background-color: #0B132B;
+    .footer__name {
+        color: ghostwhite;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.1;
+    }
+
+    .footer__version {
+        color: ghostwhite;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.1;
+        margin-top: 2rem;
+    }
+
+    .footer__year {
+        color: ghostwhite;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.1;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer {
+        padding: 1rem 1rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer {
+        padding: 2rem 4rem;
+    }
+}

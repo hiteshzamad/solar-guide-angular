@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  menuOpened = false;
+
+  menuList = [
+    { title: 'Home', link: '/home' }
+  ]
+
+  onMenuClick() {
+    this.menuOpened = !this.menuOpened;
+  }
+
 }
