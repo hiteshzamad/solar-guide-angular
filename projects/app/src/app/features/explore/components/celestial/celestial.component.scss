@@ -1,0 +1,29 @@
+.celestial {
+    width: 100%;
+    margin: 1rem 0;
+
+    .celestial__title {
+        width: 100%;
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: #1A1A1A;
+    }
+
+    .celestial-image {
+        width: 20rem;
+    }
+
+    .celestial__image {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+
+    .celestial__description {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: #1A1A1A;
+    }
+
+}

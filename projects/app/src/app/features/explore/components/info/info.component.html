@@ -15,15 +15,17 @@
         </swiper-slide>
     </swiper-container>
 
-    <div class="celestial-list flex--row" *ngIf="celestialTypeList?.length > 0">
+    <ng-container *ngIf="celestialTypeList?.length > 0">
         <div class="celestial-type-item__description">
             {{celestialTypeList[selectedCelestialIndex].description}}
         </div>
-        <div class="celestial-item flex--col"
-            *ngFor="let item of celestialTypeList[selectedCelestialIndex].celestialList"
-            (click)="onCelestialClick(item)">
-            <img class="celestial-item__image" [src]="item.imageurl" alt="Celestial Image" />
-            <div class="celestial-item__title">{{item.name}}</div>
+        <div class="celestial-list flex--row">
+            <div class="celestial-item flex--col"
+                *ngFor="let item of celestialTypeList[selectedCelestialIndex].celestialList"
+                (click)="onCelestialClick(item)">
+                <img class="celestial-item__image" [src]="item.imageurl" alt="Celestial Image" />
+                <div class="celestial-item__title">{{item.name}}</div>
+            </div>
         </div>
-    </div>
+    </ng-container>
 </div>

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CelestialService } from 'projects/app/src/app/core/services/celestial.service';
 import { CelestialTypeModel } from '../../../../core/models/celestial-type.model';
+import { CelestialModel } from 'projects/app/src/app/core/models/celestial.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-screen-explore',
@@ -9,9 +11,13 @@ import { CelestialTypeModel } from '../../../../core/models/celestial-type.model
 })
 export class ScreenExploreComponent {
 
-  celestialTypeList: CelestialTypeModel[] 
+  celestialTypeList: CelestialTypeModel[]
 
-  constructor(private celestialService: CelestialService) {
+  constructor(private celestialService: CelestialService, private router: Router) {
     this.celestialTypeList = celestialService.celestialTypeList
+  }
+
+  onCelestialClick(celestial: CelestialModel) {
+    this.router.navigate(['/explore', celestial.id]);
   }
 }

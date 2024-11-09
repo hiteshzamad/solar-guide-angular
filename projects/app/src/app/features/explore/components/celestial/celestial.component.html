@@ -1,0 +1,7 @@
+<div class="celestial flex--col flex--aln-cen" *ngIf="celestial">
+    <div class="celestial__title">{{ celestial.name }}</div>
+    <div class="celestial-image">
+        <img class="celestial__image" [src]="celestial.imageurl" [alt]="celestial.name" />
+    </div>
+    <div class="celestial__description"> {{ celestial.description }}</div>
+</div>
