@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
 import { NewsModel } from '../../models/news.model';
 
@@ -21,4 +21,11 @@ export class NewsComponent {
 
   @Input()
   newsList: NewsModel[] = []
+
+  @Output()
+  newsClick = new EventEmitter<NewsModel>()
+
+  onNewsClick(news: NewsModel) {
+    this.newsClick.emit(news)
+  }
 }

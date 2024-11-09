@@ -1,0 +1,9 @@
+<div class="fact flex--col">
+    <swiper-container #swiper initSwiper [config]="swiperConfig">
+        <swiper-slide *ngFor="let item of factList">
+            <div class="fact-item flex--col flex--jus-cen">
+                <div class="fact-item__description">{{item.description}}</div>
+            </div>
+        </swiper-slide>
+    </swiper-container>
+</div>

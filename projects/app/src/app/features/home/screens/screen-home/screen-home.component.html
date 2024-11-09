@@ -1,4 +1,5 @@
-<div class="flex--col">
+<div class="screen flex--col">
     <app-intro></app-intro>
-    <app-news [newsList]="newsList"></app-news>
+    <app-news [newsList]="newsList" (newsClick)="onNewsClick($event)"></app-news>
+    <app-fact [factList]="factList"></app-fact>
 </div>

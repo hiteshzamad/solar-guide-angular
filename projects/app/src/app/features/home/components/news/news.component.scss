@@ -13,8 +13,8 @@
     }
 
     .news-item {
-        max-width: 20rem;
-        height: 28rem;
+        cursor: pointer;
+        height: 26rem;
         border: 0.1rem solid #e0e0e0;
     }
 
@@ -25,7 +25,7 @@
     }
 
     .news-item__content {
-        padding: 0 1rem;
+        padding: 0.5rem 1rem;
     }
 
     .news-item__title {
