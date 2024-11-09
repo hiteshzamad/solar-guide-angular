@@ -1,0 +1,29 @@
+<div class="info flex--col">
+    <div class="info__title"> Explore the Solar System </div>
+    <div class="info__subtitle">
+        Dive into the fascinating details of our solar system. From the blazing heat of the Sun to the icy, far reaches
+        of distant comets, explore the unique and diverse celestial bodies that make up our cosmic neighborhood.
+    </div>
+
+    <swiper-container #swiper class="celestial-type-list" initSwiper [config]="swiperConfig">
+        <swiper-slide *ngFor="let item of celestialTypeList;let i = index">
+            <div class="celestial-type-item flex--row flex--jus-cen"
+                [ngClass]="{ 'celestial-type-item--selected' : i == selectedCelestialIndex }"
+                (click)="onCelestialTypeClick(i)">
+                {{item.name}}
+            </div>
+        </swiper-slide>
+    </swiper-container>
+
+    <div class="celestial-list flex--row" *ngIf="celestialTypeList?.length > 0">
+        <div class="celestial-type-item__description">
+            {{celestialTypeList[selectedCelestialIndex].description}}
+        </div>
+        <div class="celestial-item flex--col"
+            *ngFor="let item of celestialTypeList[selectedCelestialIndex].celestialList"
+            (click)="onCelestialClick(item)">
+            <img class="celestial-item__image" [src]="item.imageurl" alt="Celestial Image" />
+            <div class="celestial-item__title">{{item.name}}</div>
+        </div>
+    </div>
+</div>

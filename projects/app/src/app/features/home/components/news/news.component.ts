@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
-import { NewsModel } from '../../models/news.model';
+import { NewsModel } from '../../../../core/models/news.model';
 
 @Component({
   selector: 'app-news',

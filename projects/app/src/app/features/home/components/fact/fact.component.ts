@@ -1,6 +1,6 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { SwiperOptions } from 'swiper/types';
-import { FactModel } from '../../models/fact.model';
+import { FactModel } from '../../../../core/models/fact.model';
 import { SwiperContainer } from 'swiper/element';
 
 @Component({
@@ -21,7 +21,6 @@ export class FactComponent {
   factList: FactModel[] = []
 
   ngAfterViewInit(): void {
-    this.swiper.nativeElement.swiper.slidesPerViewDynamic();
     this.swiper.nativeElement.swiper.autoplay.start();
   }
 

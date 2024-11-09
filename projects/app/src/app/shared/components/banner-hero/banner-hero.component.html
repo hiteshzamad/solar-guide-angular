@@ -1,8 +1,8 @@
 <div class="banner-hero">
-  <swiper-container initSwiper [config]="swiperConfig">
+  <swiper-container #swiper initSwiper [config]="swiperConfig">
     <swiper-slide *ngFor="let item of bannerList">
       <div class="hb-item flex--row flex--aln-cen flex--jus-cen">
-        <img class="hb-item__image" [src]="item.imageurl" alt="banner">
+        <img class="hb-item__image" [src]="item.imageurl" alt="Banner">
       </div>
     </swiper-slide>
   </swiper-container>

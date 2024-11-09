@@ -10,7 +10,8 @@ export class HeaderComponent {
   menuOpened = false;
 
   menuList = [
-    { title: 'Home', link: '/home' }
+    { title: 'Home', link: 'home' },
+    { title: 'Explore', link: 'explore' },
   ]
 
   onMenuClick() {

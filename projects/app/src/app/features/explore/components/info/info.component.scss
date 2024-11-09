@@ -1,0 +1,74 @@
+.info {
+    width: 100%;
+    margin: 2rem 0;
+
+    .info__title {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: #1A1A1A;
+    }
+
+    .info__subtitle {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: #1A1A1A;
+    }
+
+    .margin--t1rem {
+        margin-top: 1rem;
+    }
+
+    .celestial-type-list {
+        margin-top: 2rem;
+    }
+
+    .celestial-type-item {
+        border: 0.1rem solid #E0E0E0;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        padding: 1.25rem 0;
+        min-width: 6rem;
+        max-width: 15rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #1A1A1A;
+    }
+
+    .celestial-type-item--selected {
+        background-color: #E3E8FF;
+    }
+
+    .celestial-type-item__description {
+        font-size: 1.25rem;
+        color: #1A1A1A;
+    }
+
+    .celestial-list {
+        margin: 2rem 0;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .celestial-item {
+        cursor: pointer;
+        border: 0.1rem solid #E0E0E0;
+    }
+
+    .celestial-item:hover {
+        box-shadow: 0 0 0.5rem rgba(0 0 0 / 20%);
+    }
+
+    .celestial-item__image {
+        width: 100%;
+        height: 10rem;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+
+    .celestial-item__title {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #1A1A1A;
+    }
+}
