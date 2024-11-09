@@ -1,5 +1,5 @@
 <div class="news flex--col">
-    <div class="news__heading">News</div>
+    <div class="news__title">News</div>
     <swiper-container class="margin--t1rem" initSwiper [config]="swiperConfig">
         <swiper-slide *ngFor="let item of newsList">
             <div class="news-item flex--col" (click)="onNewsClick(item)">
